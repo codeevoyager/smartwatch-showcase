@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans serif;
+}
+
+header{
+    background-color: #1A2622;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+header .logo{
+    height: 30px;
+    color: white;
+    margin: 20px auto;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+}
+
+/*------------Preview Image Section-----------------*/
+section .preview{
+    width: 40%;
+}
+
+.preview img{
+    width: 400px;
+    height: 400px; 
+    transform: translateX(-40px);
+}
+
+
+/*-------------Info section----------------------------*/
+section .info{
+    width: 60%;
+}
+
+section .info h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section .info .description{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section .info h4{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+section .info ul{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+section .info ul li{
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+section .info ul li.black{
+    background-color:#23211f;
+}
+
+section .info ul li.red{
+    background-color:#ca3d22;
+}
+
+section .info ul li.blue{
+    background-color:#565681;
+}
+
+section .info ul li.purple{
+    background-color:#8a5362;
+}
+
+section .info ul li.pink{
+    background-color:#e9c7be;
+}
+
+.options{
+    margin-block: 40px;
+}
+
+.options span{
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-right: 20px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+button{
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: orange;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:700px){
+
+    section{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .preview img{
+        width: 200px;
+        height: 200px;
+        transform: translateX(50px);
+
+    }
+
+    section .info{
+        width: 100%;    
+        padding-left: 20px;
+    }
+
+    section .info h1{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }    
+
+    section .info .description{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    section .info ul{
+        margin-bottom: 10px;
+    }
+
+    section .info h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }   
+
+    .options{
+        margin-block: 20px;
+    }
+
+    .options span{
+        padding: 10px;
+    }    
+
+    button{
+        padding: 10px 15px;
+    }    
+    
+}
+
+
+
+
